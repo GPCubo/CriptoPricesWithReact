@@ -6,13 +6,13 @@ const reqSvgs = require.context ( '../public/svg', true, /\.svg$/ )
 
 function App() {
   let defaulValues ={
+    airtm: "",
     binance: "",
     payonner: "",
     reserve: "",
     skrill: "",
     uphold: "",
     zelle: "",
-    airtm: ""
   }
   let today = new Date()
   let fecha = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear()
