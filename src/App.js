@@ -12,7 +12,7 @@ function App() {
     skrill: "",
     uphold: "",
     zelle: "",
-    cop: ""
+    airtm: ""
   }
   let today = new Date()
   let fecha = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear()
@@ -80,13 +80,21 @@ function App() {
           }
         </div>
         <div className="App-div-borderR">
-          <p className="App-p-copBs">COP ⇆ BS</p>
+          <span className="App-span-remesasSize">Remesas</span>
+          <p className="App-p-remesas">
+          <span className="App-span-remesas">🇨🇴 COLOMBIA</span>
+          <span className="App-span-remesas">🇨🇱 CHILE</span>
+          <span className="App-span-remesas">🇵🇦 PANAMÁ</span>
+          <span className="App-span-remesas">🇵🇪 PERU</span>
+          <span className="App-span-remesas">🇪🇨 ECUADOR</span>
+          </p>
+          {/* <p className="App-p-copBs">COP ⇆ BS</p>
           {
             settings === false ?
             <p className="App-p-scoreCopBs" onClick={handleChangePrice}>{Object.values(newValues)[6] === "" ? "Consultar":Object.values(newValues)[6]}</p>
             :
             <input type="number" className="App-input-scoreCopBs" placeholder="SOLO COLOCA LA CANTIDAD EXACTA" name="cop"onChange={handleChangingInput} />
-          }
+          } */}
         </div>
         <div className="App-div-socialMedia">
           <i class="fab fa-instagram App-i-instagram"> Kriptocambios.ve </i>
