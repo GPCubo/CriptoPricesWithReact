@@ -68,7 +68,7 @@ input{
 }
 .App-img-logo{
   position: relative;
-  top: -105px;
+  top: -125px;
   left: 170px;
   width: 100px;
 }
@@ -78,7 +78,7 @@ input{
 .App-div-borderR{
   position: relative;
   right: -480px;
-  top: -640px;
+  top: -650px;
   width: 200px;
   height: 200px;
   border-radius: 0px 0 100px 100px;
@@ -90,7 +90,7 @@ input{
 }
 .App-p-dateAndHour{
   padding: 0;
-  margin: -10px 0  0 20px;
+  margin: 10px 0  0 20px;
   font-family: sans-serif;
 }
 .App-p-scoreCopBs{
@@ -177,6 +177,7 @@ input{
     font-size: 30px;
   }
   .App-span-delDia{
+    margin-top: -7px;
     font-size: 15px;
   }
   .App-img-logo{
