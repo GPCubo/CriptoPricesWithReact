@@ -33,6 +33,9 @@ input{
   overflow: hidden;
   box-sizing: border-box;
   background: linear-gradient(0deg, var(--medium-color) 0%, var(--light-color) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   z-index: 5;
 }
 .App-h1-title{
@@ -57,8 +60,12 @@ input{
   justify-content: space-between;
   align-items: center;
 }
-.App-logo-size{
+.App-logo-size,.App-img-bandera{
   width: 50px;
+}
+.App-img-bandera{
+  margin-left: 20px;
+  border-radius: 5px;
 }
 .App-p-price{
   cursor: pointer;
@@ -74,19 +81,6 @@ input{
 }
 .App-div-marginTop{
   margin-top: -60px;
-}
-.App-div-borderR{
-  position: relative;
-  right: -480px;
-  top: -650px;
-  width: 200px;
-  height: 200px;
-  border-radius: 0px 0 100px 100px;
-  background-color: var(--dark-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 .App-p-dateAndHour{
   padding: 0;
@@ -129,13 +123,8 @@ input{
   border-radius: 15px;
   background-color: var(--light-color);
 }
-.App-div-socialMedia{
-  display: flex;
-  margin: -170px -480px 0 0;
-  align-items: center;
-  justify-content: center;
-}
 .App-i-instagram{
+  margin-top: 20px;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
 }
@@ -156,6 +145,9 @@ input{
 .App-p-remesas{
   margin: 5px -10px  0 0;
 }
+.App-div-pricesAll{
+  display: flex;
+}
 @media(max-width:840px){
   input{
     color: black;
@@ -163,31 +155,34 @@ input{
     width: 100px;
     margin-right: 20px;
   }
+  .App-img-bandera{
+    margin-left: 10px;
+  }
+  .App-div-pricesAll{
+    flex-direction: column;
+  }
   .App-div-colorAndSize{
     width: 250px;
-    height: 360px;
+    height: 570px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .App-h1-title{
-    margin-left: -30px;
   }
   .App-span-tasa{
     font-size: 30px;
   }
   .App-span-delDia{
-    margin-top: -7px;
-    font-size: 15px;
+    margin-top: -7px ;
+    font-size: 20px;
   }
   .App-img-logo{
     width: 50px;
-    top: -50px;
-    left: 55px;
+    top: -60px;
+    left: 112px;
   }
   .App-p-dateAndHour{
     margin: 0;
-    margin-top: -20px;
+    margin-top: -15px;
     font-size: 10px;
   }
   .App-div-borderRAndcolorDark{
@@ -204,12 +199,6 @@ input{
   .App-p-price{
     font-size: 18px;
     margin: 0 10px;
-  }
-  .App-div-borderR{
-    display: none;
-  }
-  .App-div-socialMedia{
-    margin: 0;
   }
   .App-i-instagram{
     font-size: 12px;
